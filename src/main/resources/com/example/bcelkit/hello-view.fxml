@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.11-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bcelkit.HelloController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" />
+      <TextArea fx:id="textAre" layoutX="9.0" layoutY="8.0" prefHeight="341.0" prefWidth="584.0" wrapText="true" />
+      <HBox layoutX="22.0" layoutY="357.0" prefHeight="35.0" prefWidth="914.0">
+         <children>
+            <CheckBox fx:id="modelCheckBox" mnemonicParsing="false" onAction="#onModelCheckBoxClick" prefHeight="27.0" prefWidth="100.0" selected="true" text="解码模式" />
+            <Button fx:id="openFileButton" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="28.0" prefWidth="155.0" text="编码CLass文件">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="decodeButton" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onAction="#onDecodeButtonClick" prefHeight="28.0" prefWidth="144.0" text="解码为Class文件">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <CheckBox fx:id="compressCheckBox" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" selected="true" text="不压缩" />
+         </children></HBox>
+   </children>
+</Pane>
